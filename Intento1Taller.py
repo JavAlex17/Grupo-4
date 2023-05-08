@@ -1,4 +1,5 @@
 import sys
+from PyQt6.QtGui import QFont
 from PyQt6.QtWidgets import QApplication, QWidget, QVBoxLayout, QHBoxLayout, QLabel, QLineEdit, QPushButton, QDialog, QFormLayout
 
 
@@ -56,7 +57,8 @@ class GUI(QWidget):
         self.divisa_derecha = Divisa("Dolar Canadiense", 0.0)
         self.setup_ui()
         self.resize(600,300)
-
+        self.setFont(QFont('Arial', 10))
+        
     def setup_ui(self):
         layout = QVBoxLayout()
 
