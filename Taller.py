@@ -8,7 +8,7 @@ from PyQt6.QtWidgets import QApplication, QMainWindow, QWidget, QTableWidget, QT
 class VentanaComparacion(QMainWindow):
     def __init__(self):
         super().__init__()
-        self.resize(1000,500)
+        self.resize(600,500)
         
         self.setWindowTitle("Grupo 4: Yen vs Dólar Canadience")
         
