@@ -91,7 +91,6 @@ class GUI(QWidget):
         # Botón de actualización de comparación
         btn_actualizar = QPushButton("Actualizar Comparación")
         btn_actualizar.clicked.connect(self.actualizar_comparacion)
-        btn_actualizar.setStyleSheet("QPushButton { background-color: #d199f2; color: purple; }")
         layout.addWidget(btn_actualizar)
         btn_actualizar.setFixedSize(200, 50)
 
