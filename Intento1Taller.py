@@ -55,6 +55,7 @@ class GUI(QWidget):
         self.divisa_izquierda = Divisa("Yen Japones", 0.0)
         self.divisa_derecha = Divisa("Dolar Canadiense", 0.0)
         self.setup_ui()
+        self.resize(600,300)
 
     def setup_ui(self):
         layout = QVBoxLayout()
