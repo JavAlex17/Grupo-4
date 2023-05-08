@@ -70,46 +70,34 @@ class GUI(QWidget):
     def setup_ui(self):
         layout = QVBoxLayout()
 
-        # Texto de bienvenida
         label_bienvenida = QLabel("¡Bienvenido! Ingresa los datos de las divisas:")
         layout.addWidget(label_bienvenida)
-
-        # Texto de instrucciones
+        
         label_instrucciones = QLabel("Ingrese el valor de la divisa en su respectiva moneda:")
         layout.addWidget(label_instrucciones)
 
-        # Panel de comparación
         panel_comparacion = QHBoxLayout()
-
-        # Despliegue de información del objeto a la izquierda
         self.label_izquierda = QLabel()
         panel_comparacion.addWidget(self.label_izquierda)
-
-        # Texto central que indica quién es mayor
         self.label_comparacion = QLabel()
         panel_comparacion.addWidget(self.label_comparacion)
-
-        # Despliegue de información del objeto a la derecha
         self.label_derecha = QLabel()
         panel_comparacion.addWidget(self.label_derecha)
 
         layout.addLayout(panel_comparacion)
 
-        # Botón de actualización de comparación
         btn_actualizar = QPushButton("Actualizar Comparación")
         btn_actualizar.clicked.connect(self.actualizar_comparacion)
         btn_actualizar.setStyleSheet("QPushButton { background-color: #d199f2; color: purple; }")
         layout.addWidget(btn_actualizar)
         btn_actualizar.setFixedSize(450, 50)
 
-        # Botones de ingreso de datos
         btn_izquierda = QPushButton("Agregar Datos (Izquierda)")
         btn_izquierda.clicked.connect(self.abrir_dialogo_izquierda)
         btn_izquierda.setStyleSheet("QPushButton { background-color: #d199f2; color: purple; }")
         layout.addWidget(btn_izquierda)
         btn_izquierda.setFixedSize(450, 50)
 
-        
         btn_derecha = QPushButton("Agregar Datos (Derecha)")
         btn_derecha.clicked.connect(self.abrir_dialogo_derecha)
         btn_derecha.setStyleSheet("QPushButton { background-color: #d199f2; color: purple; }")
