@@ -1,3 +1,10 @@
+#Integrantes: 
+#Javiera Cabezas
+#Annais Caro
+#Natalia Carrillanca
+#Franco Comas
+#Felipe Delgado
+
 import sys
 from PyQt6.QtGui import QFont
 from PyQt6.QtWidgets import QApplication, QWidget, QVBoxLayout, QHBoxLayout, QLabel, QLineEdit, QPushButton, QDialog, QFormLayout
