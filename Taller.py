@@ -32,6 +32,7 @@ class VentanaComparacion(QMainWindow):
         
     def comparar():
         pass
+
         
 
     
