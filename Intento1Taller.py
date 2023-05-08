@@ -93,21 +93,21 @@ class GUI(QWidget):
         btn_actualizar.clicked.connect(self.actualizar_comparacion)
         btn_actualizar.setStyleSheet("QPushButton { background-color: #d199f2; color: purple; }")
         layout.addWidget(btn_actualizar)
-        btn_actualizar.setFixedSize(450, 70)
+        btn_actualizar.setFixedSize(450, 50)
 
         # Botones de ingreso de datos
         btn_izquierda = QPushButton("Agregar Datos (Izquierda)")
         btn_izquierda.clicked.connect(self.abrir_dialogo_izquierda)
         btn_izquierda.setStyleSheet("QPushButton { background-color: #d199f2; color: purple; }")
         layout.addWidget(btn_izquierda)
-        btn_izquierda.setFixedSize(450, 70)
+        btn_izquierda.setFixedSize(450, 50)
 
         
         btn_derecha = QPushButton("Agregar Datos (Derecha)")
         btn_derecha.clicked.connect(self.abrir_dialogo_derecha)
         btn_derecha.setStyleSheet("QPushButton { background-color: #d199f2; color: purple; }")
         layout.addWidget(btn_derecha)
-        btn_derecha.setFixedSize(450, 70)
+        btn_derecha.setFixedSize(450, 50)
 
         self.setLayout(layout)
 
