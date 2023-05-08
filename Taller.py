@@ -10,21 +10,45 @@ class VentanaComparacion(QMainWindow):
         self.setWindowTitle("Grupo 4: Yen vs Dólar Canadience")
         layout = QVBoxLayout()
         
-        messageL = QLabel('Bienvenido')
+        messageL = QLabel('Bienvenido a la aplicación para comparar Divisas')
         layout.addWidget(messageL)
-        self.botonComparar = QPushButton('Comparar')
-        self.botonComparar.clicked.connect(self.comparar)
         
-        layout.addWidget(self.botonComparar)
+        
         central_widget = QWidget()
         central_widget.setLayout(layout)
         self.setCentralWidget(central_widget)
         
         
+        self.botonElementoIzq = QPushButton('Agregar Atributos')
+        self.botonElementoIzq.clicked.connect(self.elementoIzq)
+        layout.addWidget(self.botonElementoIzq)
+        #layout.addWidget(self.botonElementoIzq)
+        
+        self.botonElementoDer = QPushButton('Agregar Atributos')
+        self.botonElementoDer.clicked.connect(self.elementoDer)
+        layout.addWidget(self.botonElementoDer)
+        
+        izq_widget = QWidget()
+        izq_widget.setLayout(layout)
+        self.setCentralWidget(izq_widget)
+        
+        self.botonComparar = QPushButton('Comparar')
+        self.botonComparar.clicked.connect(self.comparar)
+        layout.addWidget(self.botonComparar)
+        
+        
+        
+    def elementoIzq(self):
+        
+        pass
+    
+    def elementoDer(self):
+        pass
         
         
     def comparar():
         pass
+
         
 class Divisa:
     def __init__(self,nombredivisa,valordivisa):
